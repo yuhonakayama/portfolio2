@@ -1,0 +1,570 @@
+/* PC、スマホ共通スタイル */
+
+body {
+  font-family: "Zen Kaku Gothic Antique", "Source Sans Pro","Hiragino kaku Gothic ProN", Meiryo, Arial, sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  box-sizing: border-box;
+}
+
+p {
+  font-size: 16px;
+}
+
+/* PC用スタイル */
+
+/* 横幅設定 */
+body {
+  width: 100%;
+  /* max-width: 2000px; */
+}
+
+/* タイトル設定 */
+.back-title {
+  margin: 0;
+  font-family: "Kristi", cursive;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 150px;
+  color: #ffffff;
+}
+
+.true-title {
+  margin: 0;
+  text-align: center;
+  font-family: "Kristi", cursive;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 50px;
+  color: #000000;
+  opacity: 0.5;
+}
+
+/* ヘッダー */
+header {
+  display: flex;
+  justify-content: space-between;
+  text-align: right;
+  align-items: center;
+  margin: 10px auto;
+}
+
+.title-logo {
+  margin-left: 100px;
+  font-size: 30px;
+  color: #000;
+  text-decoration: none;
+}
+
+.title-logo:hover {
+  text-decoration: underline;
+}
+
+.nav-pc {
+  margin-right: 100px;
+}
+
+.nav-pc > a {
+  margin-left: 30px;
+  font-size: 16px;
+  color: #000;
+  text-decoration: none;
+}
+
+.nav-pc > a:hover {
+  text-decoration: underline;
+}
+
+/* メインビジュアル */
+#mv {
+  display: block;
+  width: 100%;
+}
+
+.main {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+}
+
+.mv-img {
+  width: 80%;
+  max-width: 1400px;
+}
+
+.between {
+  height: 100vh;
+  position: relative;
+}
+
+.girl-img {
+  position: absolute;
+  bottom: 0;
+  left: 20%;
+  width: 20%;
+}
+
+.img {
+  position: relative;
+  height: 80vh;
+}
+
+.purple-img {
+  position: absolute;
+  top: -10%;
+  right: 15%;
+  width: 20%;
+}
+
+.yellow-img {
+  position: absolute;
+  top: 10%;
+  right: 15%;
+  width: 45%;
+  z-index: 21;
+}
+
+/* 参考作品 */
+#reference-works {
+  margin-top: 300px;
+}
+
+.shadow {
+  position: relative;
+  height: 250vh;
+  background-image: url(image/reference-works/Rectangle\ 10.jpg);
+  background-repeat: no-repeat;
+  z-index: 20;
+}
+
+.big-reference {
+  position: absolute;
+  top: 30vh;
+  right: 0%;
+  margin: 0;
+  font-family: "Kristi", cursive;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 150px;
+  color: #ffffff;
+}
+
+.small-reference {
+  position: absolute;
+  top: 65vh;
+  left: 50%;
+  transform: translateX(-50%); 
+  margin: 0;
+  text-align: center;
+  font-family: "Kristi", cursive;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 50px;
+  color: #000000;
+  opacity: 0.5;
+}
+
+.room {
+  position: absolute;
+  top: 80vh;
+  left: 50%;
+  transform: translateX(-50%); 
+  width: 1300px;
+  height: 500px;
+  border-radius: 200px 200px 0 0;
+  background-color: #EEEBEB;
+  border: 5px solid #ACABA0;
+  box-shadow: inset 0px 20px 4px rgba(0, 0, 0, 0.25);
+  text-align: center;
+  overflow: hidden;
+  z-index: 31;
+}
+
+.flower-img {
+  position: absolute;
+  top: 30%;
+  left: 15%;
+}
+
+.little-red {
+  position: absolute;
+  top: 55%;
+  left: 20%;
+}
+
+/* .inside-light {
+  width: 0;
+  height: 0;
+  border-left: 50% solid red;
+  border-right: 50% solid red;
+  border-bottom: 100% solid red;
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+} */
+
+.inside-light {
+  position: absolute;
+  top: 65px;
+  left: 50%;
+  transform: translateX(-50%);
+  height: auto;
+  width: auto;
+  object-fit: cover;
+  max-width: 100%;
+}
+
+.lump-img {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 80px;
+}
+
+.works1-img {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 300px;
+}
+
+.explanation {
+  position: absolute;
+  top: 85%;
+  left: 50%;
+  transform: translate(-50%, -85%);
+  background-color: #ffffff;
+  box-shadow: 5px 5px 4px rgba(0, 0, 0, 0.25);
+  padding: 5px 10px;
+}
+
+.explanation > h3 {
+  margin: 0;
+  font-size:16px;
+}
+
+.explanation > p {
+  margin: 0;
+  font-size: 12px;
+}
+
+.apple-img {
+  position: absolute;
+  top: 45%;
+  right: 15%;
+}
+
+.outside-light {
+  position: absolute;
+  top: calc(80vh + 460px); 
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 30;
+}
+
+/* スキル */
+#skills {
+  position: relative;
+  width: 100vw;
+  height: 300vh;
+}
+
+.parent-container {
+  position: absolute;
+  top: 50%;
+  width: 80vw;
+  height: 75vh;
+  background-color: #f6f6f6;
+  border-radius: 0 200px 0 0;
+  overflow: visible;
+}
+
+.parent-container::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 25%;
+  height: 100%;
+  background-color: rgba(135, 229, 255, 0.3); /* 実線の色 */
+}
+
+.purple-img2 {
+  position: absolute;
+  top: -100%;
+  left: 60%;
+  transform: translateX(-60%);
+  width: 20%;
+}
+
+.blue-img {
+  position: absolute;
+  bottom: 100%;
+  left: 25%;
+  transform: translateX(-20%);
+  width: 40%;
+}
+
+.big-skills {
+  position: absolute;
+  bottom: 110%;
+  left: 25%;
+  color: rgba(0, 0, 0, 0.15);
+}
+
+.small-skills {
+  position: absolute;
+  bottom: 100%;
+  right: 50%;
+  margin: 20px 50px;
+}
+
+.bigcat-img {
+  position: absolute;
+  bottom: 100%;
+  right: 20%;
+  width: 30%;
+}
+
+.all-skills {
+  position: absolute;
+  top: 50%;
+  left: 70%;
+  transform: translate(-70%, -50%);
+  width: 70%;
+}
+
+.skills-container1 {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  margin-bottom: 5vh;
+}
+
+.skills-container2 {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+.skills-item {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 20%;
+  height: 28vh;
+  min-width: 150px;
+  background-color: #ffffff;
+  box-shadow: 5px 5px 4px rgba(0, 0, 0, 0.25);
+  overflow: hidden;
+}
+
+.transparent-item {
+  background-color: transparent;
+  box-shadow: none;
+}
+
+.skills-contents {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 80%;
+  height: 90%;
+  z-index: 40;
+}
+
+.skills-img {
+  /* height: 30%; */
+  margin: 5% auto;
+}
+
+#php-img {
+  height: 30%;
+  /* padding-top: 5px; */
+}
+
+.skills-contents > h3 {
+  height: 20%;
+  margin: 5% auto;
+  z-index: 41;
+}
+
+.skills-contents > p {
+  font-size: 12px;
+  height: 50%;
+  margin: 5% auto;
+  z-index: 42;
+}
+
+.puzzleback-img {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  object-fit: cover;
+  z-index: 39;
+}
+
+.play-cat {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 35%;
+  height: 100%;
+  z-index: 50;
+}
+
+.footprints-img {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 80%;
+}
+
+.smallcat-img {
+  position: absolute;
+  bottom: -20px;
+  left: 70%;
+  width: 50%;
+  z-index: 52;
+}
+
+.phonepuzzle-img {
+  position: absolute;
+  bottom: -20px;
+  right: -25%;
+  width: 20%;
+  z-index: 51;
+}
+
+/* 私について */
+#about {
+  position: relative;
+  height: 250vh;
+}
+
+.aboutme-container {
+  position: absolute;
+  top: 0%;
+  left: 50%;
+  transform: translateX(-50%);
+  height: 200vh;
+  width: 100vw;
+  max-width: 1700px;
+  min-width: 1000px;
+}
+
+.aboutsky-img {
+  position: absolute;
+  top: 15%;
+  right: 10%;
+  width: 45%;
+  z-index: 68;
+}
+
+.big-about {
+  position: absolute;
+  top: 0;
+  right: 10%;
+  color: rgba(0, 0, 0, 0.15);
+}
+
+.small-about {
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%,-40%);
+}
+
+.aboutmain-img {
+  position: absolute;
+  top: 45%;
+  left: 10%;
+  width: 30%;
+}
+
+.about-text {
+  position: absolute;
+  top: 48%;
+  left: 55%;
+  transform: translateX(-55%);
+  width: 30%;
+  height: auto;
+  z-index: 70;
+  margin: 50px;
+}
+
+.about-text > h3 {
+  margin: 50px 0;
+}
+
+.aboutunder-img {
+  position: absolute;
+  top: calc(48% + 500px);
+  right: 20%;
+  width: 12%;
+}
+
+/* お問い合わせ*/
+#contact {
+  position: relative;
+  height: 100vh;
+}
+
+.contact-container {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 80vw;
+  height: 40vh;
+  max-width: 1700px;
+  min-width: 1000px;
+  margin: 20px;
+  z-index: 90;
+}
+
+.big-contact {
+  position: absolute;
+  top: -30%;
+  left: 10%;
+  color: rgba(0, 0, 0, 0.15);
+  margin: 0;
+}
+
+.contact-container > p {
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.sns {
+  position: absolute;
+  top: 70%;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.sns > img {
+  margin: 10px;
+}
+
+.phone-img {
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 2000px;
+  overflow: hidden;
+  z-index: 89;
+}
